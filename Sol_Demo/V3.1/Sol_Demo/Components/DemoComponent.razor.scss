@@ -1,0 +1,11 @@
+﻿$myColor: red;
+$myBackgroundColor: orange;
+
+@mixin impotant-color {
+    color: $myColor;
+    background-color: $myBackgroundColor
+}
+
+div.color {
+    @include impotant-color
+}

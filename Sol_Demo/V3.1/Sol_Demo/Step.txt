@@ -1,0 +1,35 @@
+﻿Step 1: One time Activity
+Download WebCompiler extension from Visual studio.
+Go to Extension Menu -> Select Manage Extension -> Search Web Compiler -> Install.
+
+Step 2:
+Create a Components folder and create DemoComponent.razor file.
+also create a following file inside the components folder.
+DemoComponent.razor.js
+DemoComponent.razor.scss
+
+Step 3:
+Right click on DemoComponent.razor.js file and select Web Compiler -> Compile File. 
+[Same process for DemoComponent.razor.scss file]
+it will generate compilerconfig.json file in the root folder.
+
+   1. go to compilerconfig.json file and set input and output file path like this
+
+   [
+      {
+        "outputFile": "wwwroot/js/DemoComponent.razor.js",
+        "inputFile": "Components/DemoComponent.razor.js"
+      },
+      {
+        "outputFile": "wwwroot/css/DemoComponent.razor.css",
+        "inputFile": "Components/DemoComponent.razor.scss"
+      }
+]
+
+Note: output file path must be wwwroot folder.
+
+Step 4:
+Compile files on MS Build.
+Select compilerconfig.json file, right click on compilerconfig.json file -> select Task Runner Explorer -> it will open Task Runner Explorer dialog box.
+Find "All files" -> Right click on "All files" -> Select binding -> Select Before Build.
+It will build your script and scss before ms build.

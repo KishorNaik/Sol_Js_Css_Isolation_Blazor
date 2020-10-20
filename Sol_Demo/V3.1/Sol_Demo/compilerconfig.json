@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "wwwroot/js/DemoComponent.razor.js",
+    "inputFile": "Components/DemoComponent.razor.js"
+  },
+  {
+    "outputFile": "wwwroot/css/DemoComponent.razor.css",
+    "inputFile": "Components/DemoComponent.razor.scss"
+  }
+]
