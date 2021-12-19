@@ -1,0 +1,7 @@
+﻿div.div-isolation-demo {
+    height: 300px;
+    width: 300px;
+    background-color: greenyellow;
+    border: 2px solid red;
+    border-radius: 4px;
+}
